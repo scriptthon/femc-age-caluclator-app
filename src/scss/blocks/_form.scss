@@ -12,23 +12,24 @@ $button-size: 90px;
 
   &>div:last-child {
     justify-content: end;
-
   }
 
   label {
     display: block;
     color: var(--Smokey-grey);
     margin-bottom: 7px;
+    font-weight: 700;
   }
 }
 
 input {
   padding: 10px 20px;
   display: inline;
+  width: 100%;
   max-width: 150px;
   border: 1px solid;
   border-radius: 10px;
-  font-size: 32px;
+  font-size: var(--Font-size-inputs);
 }
 
 input:focus {
@@ -39,6 +40,7 @@ input:focus {
   background-color: var(--Off-black);
   padding: 20px;
   border-radius: 50%;
+  transition: background-color .3s ease;
 
   &:hover {
     background-color: var(--Purple);
@@ -49,5 +51,23 @@ input:focus {
   position: absolute;
   width: $button-size;
   height: $button-size;
-  // right: calc(($button-size / 2) * -1);
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  $button-size: 70px;
+  .form .btn-wrapper {
+    justify-content: center !important;
+    padding: 20px;
+
+     button {
+      width: $button-size;
+      height: $button-size;
+      bottom: calc(($button-size / 2) * -1);
+    }
+  }
 }

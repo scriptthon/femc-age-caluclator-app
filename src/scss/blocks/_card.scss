@@ -1,5 +1,6 @@
 .card {
   background-color: var(--White);
+  box-shadow: 0 0 50px var(--Off-white);
   padding: 50px;
   max-width: 760px;
   width: 100%;
@@ -12,7 +13,7 @@
 
 .card {
   p {
-    font-size: 10vh;
+    font-size: 91px;
     font-weight: 800;
     font-style: italic;
   }
@@ -20,4 +21,33 @@
 
 .card > div {
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 730px) {
+  .card {
+    p {
+      font-size: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  :root {
+    --Font-size-inputs: 18px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .card p {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  :root {
+    --Font-size-inputs: 15px;
+  }
+  .card p {
+    font-size: 38px;
+  }
 }
