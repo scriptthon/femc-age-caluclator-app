@@ -1,0 +1,53 @@
+$button-size: 90px;
+
+.form {
+  position: relative;
+  border-bottom: 2px solid var(--Smokey-grey-hr);
+  padding-bottom: 40px;
+
+  &>div {
+    display: flex;
+    gap: 30px;
+  }
+
+  &>div:last-child {
+    justify-content: end;
+
+  }
+
+  label {
+    display: block;
+    color: var(--Smokey-grey);
+    margin-bottom: 7px;
+  }
+}
+
+input {
+  padding: 10px 20px;
+  display: inline;
+  max-width: 150px;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: 32px;
+}
+
+input:focus {
+  outline: 1px solid var(--Purple);
+}
+
+.form button {
+  background-color: var(--Off-black);
+  padding: 20px;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: var(--Purple);
+  }
+}
+
+.form button {
+  position: absolute;
+  width: $button-size;
+  height: $button-size;
+  // right: calc(($button-size / 2) * -1);
+}

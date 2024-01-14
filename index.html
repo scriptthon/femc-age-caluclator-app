@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <form class="form">
+          <div>
+            <div class="form__day">
+              <label for="day">DAY</label
+              ><input id="day" type="text" placeholder="DD" pattern="[0-9]" />
+            </div>
+            <div class="form__month">
+              <label for="month">MONTH</label
+              ><input id="month" type="text" placeholder="MM" />
+            </div>
+            <div class="form__year">
+              <label for="year">YEAR</label
+              ><input id="year" type="text" placeholder="YYYY" />
+            </div>
+          </div>
+          <div>
+            <button type="submit">
+              <img src="src/images/icon-arrow.svg" alt="Icon arrow" />
+            </button>
+          </div>
+        </form>
+        <div>
+          <p><span id="output-year" class="text-purple">--</span> years</p>
+          <p><span id="output-month" class="text-purple">--</span> months</p>
+          <p><span id="output-day" class="text-purple">--</span> days</p>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
